@@ -1,0 +1,83 @@
+@charset "UTF-8";
+/**************************캘린더*************************/ 
+#CalendarTableara {
+	display: none;
+}
+#tablearea , #nextTableArea {
+    position: relative;
+    width: 100%;
+
+}
+#tablearea caption , #nextTableArea caption {
+    text-align: center;
+    display: block;
+    top: -36px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    letter-spacing: 5px;
+    color: #000;
+    font-weight: 600;
+}
+#tablearea td, #tablearea th {
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+    border: none;
+    font-weight: 400;
+    line-height: 2rem;
+    font-size: 0.9rem;
+    opacity: 1;
+}
+#nextTableArea td, #nextTableArea th {
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+    border: none;
+    font-weight: 400;
+    width: 40px;
+    line-height: 2rem;
+    font-size: 0.9rem;
+    opacity: 1;
+}
+#tablearea th , #nextTableArea th {
+    font-weight: 600;
+}
+#tablearea th:first-child ,#nextTableArea th:first-child {
+    color: #e53e30;
+}
+#tablearea th:last-child ,#nextTableArea th:last-child {
+    color: #006f80;
+}
+#tablearea td , #nextTableArea td{
+    cursor: pointer;
+}
+#tablearea td:first-child , #nextTableArea td:first-child {
+    color: #e53e30;
+}
+#tablearea td:last-child , #nextTableArea td:last-child {
+    color: #006f80;
+}
+.past-day {
+    color: #ccc !important;
+    pointer-events: none !important; /* 클릭 이벤트 비활성화 */
+}
+
+.tablearea td.selected-day {
+    background-color: #F3C5C5 !important; /* 클릭한 날짜의 배경색 */
+    color: #fff !important; /* 클릭한 날짜의 글자색 */
+	border-bottom: 2px solid #F3C5C5 !important;
+	border-top: 2px solid #F3C5C5 !important;
+}
+
+/* hover 효과 스타일 */
+.tablearea td.hover-day {
+    background-color: #FEF2F4 !important; /* hover한 날짜의 배경색 */
+    border-bottom: 2px solid #F3C5C5 !important;
+	border-top: 2px solid #F3C5C5 !important;
+}
+
+/* 선택한 날짜 사이의 날짜에 대한 스타일 */
+.tablearea td.range-day {
+    background-color: #4ac3ff !important; /* 선택한 날짜 사이의 배경색 */
+}

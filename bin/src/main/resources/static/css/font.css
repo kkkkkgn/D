@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'ChosunGu';
+  src: url('../fonts/ChosunGu.TTF'); 
+}
+
+@font-face {
+  font-family: 'ChosunKg';
+  src: url('../fonts/ChosunKg.TTF'); 
+}
+
+@font-face {
+  font-family: 'ChosunNm';
+  src: url('../fonts/ChosunNm.TTF'); 
+}
+
+@font-face {
+  font-family: 'ChosunLo';
+  src: url('../fonts/ChosunLo.TTF'); 
+}
+
+@font-face {
+    font-family: 'Anja';
+    src: url('../fonts/AnjaElianeaccent002.TTF'); 
+}
+
+.ft-face-gu {
+  font-family: 'ChosunGu', sans-serif;
+}
+.ft-face-kg {
+  font-family: 'ChosunKg', sans-serif;
+}
+.ft-face-nm {
+  font-family: 'ChosunNm', sans-serif;
+}
+.ft-face-lo {
+  font-family: 'ChosunLo', sans-serif;
+}
+.ft-face-an {
+  font-family: 'Anja', sans-serif;
+}
+body {
+	font-family: 'ChosunGu', sans-serif;
+}
+
+#nav-container , .nav , .nav-link , .navbar-nav {
+    font-family: 'ChosunNm', sans-serif;
+    font-weight: 600;
+    opacity: 1;
+    color: #7a7676;
+}
+
+button {
+	font-family: 'ChosunNm', sans-serif;
+}

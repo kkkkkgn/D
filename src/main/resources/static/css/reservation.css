@@ -1,0 +1,155 @@
+@charset "UTF-8";
+
+.headCountOption {
+	padding: 10px;
+    font-family: "ChosunNm",sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+#main {
+    max-width: 100%;
+    margin: 0;	
+}
+
+
+#findAccs {
+    top: 132px;
+    border-right: 1px solid #d9dfe8;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    z-index: 12 !important;
+    background-color: #fff;
+}
+
+.headCountOption:hover {
+    background-color: #014f6e;
+    opacity: 0.7;
+    color: #fff;
+}
+
+.accInfo-header h1 {
+    font-size: 40px; /* 폰트 크기를 키움 */
+    color: white; /* 텍스트 색상을 흰색으로 지정 (변경 가능) */
+    text-align: center; /* 텍스트 가운데 정렬 */
+    font-weight: bold; /* 글씨를 볼드 처리 */
+}
+
+#accommodationImage {
+	float: left;
+	border: 1px solid #ccc;
+	width : 300px;
+	height: 300px;
+}
+
+.accInfo {
+	float: right;
+	width: 490px;
+	height: 300px;
+	border: 1px;
+	
+}
+
+
+
+#btn-accInfoToReservate {
+	padding: 10px 20px; /* 버튼 내부 여백 설정 */
+    margin-right: 10px; /* 버튼 간의 간격 조절 */
+    border: none; /* 테두리 제거 */
+    border-radius: 5px; /* 모서리 둥글게 설정 */
+    cursor: pointer; /* 포인터 커서 설정 */
+    background-color: #00aef0; /* 확인 버튼 배경색 설정 */
+    color: #fff; /* 확인 버튼 텍스트 색상 설정 */
+}
+
+#btn-closeAccInfo {
+	width: 90px;
+	padding: 10px 20px; /* 버튼 내부 여백 설정 */
+    margin-right: 10px; /* 버튼 간의 간격 조절 */
+    border: none; /* 테두리 제거 */
+    border-radius: 5px; /* 모서리 둥글게 설정 */
+    cursor: pointer; /* 포인터 커서 설정 */
+    background-color: #e74c3c; /* 취소 버튼 배경색 설정 */
+    color: #fff; /* 취소 버튼 텍스트 색상 설정 */
+    margin-left : 15px;
+    margin-top : 90px;
+}
+
+
+
+.info-window {
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.info-window-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.info-window-content {
+  font-size: 14px;
+}
+
+#paymentmodal {
+	width:300px; 
+	height:420px; 
+	display:none; 
+	position:fixed; 
+	top:50%; 
+	left:50%; 
+	transform: translate(-50%, -50%); 
+	z-index:51;
+	padding : 1px;
+	border: 1px solid #ccc;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* 그림자 효과 추가 */
+}
+
+#paymentmodal img {
+    max-width: 100%;
+    height: auto;
+}
+
+.payment-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* gap: 10px; */
+}
+
+.btn-payment {
+	cursor: pointer; /* 포인터 커서 설정 */
+	width:200px;
+}
+
+#accList li {list-style: none;}
+#accList .item {position:relative; box-shadow: 0px 0px 4px rgba(0,0,0,0.3); border-radius: 10px; margin: 5px; cursor: pointer; display: block; word-break: keep-all;}
+#accList .item span {display: block;margin-top:4px;}
+/* #accList .item h5, #accList .item .info {text-overflow: ellipsis;overflow: hidden;white-space: nowrap;} */
+#accList .item .info{padding:5px 0 5px 55px;}
+#accList .info .gray {color:#8a8a8a;}
+#accList .info .jibun {padding-left:26px;background:url(https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/places_jibun.png) no-repeat;}
+#accList .info .tel {color:#009900;}
+#accList .item .markerbg {float:left;position:absolute; left: 0; width:46px; height:37px; margin:10px 0 0 10px;background:url(https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/marker_number_blue.png) no-repeat;}
+#accList .item .marker_1 {background-position: 0 -10px;}
+#accList .item .marker_2 {background-position: 0 -56px;}
+#accList .item .marker_3 {background-position: 0 -102px}
+#accList .item .marker_4 {background-position: 0 -148px;}
+#accList .item .marker_5 {background-position: 0 -194px;}
+#accList .item .marker_6 {background-position: 0 -240px;}
+#accList .item .marker_7 {background-position: 0 -286px;}
+#accList .item .marker_8 {background-position: 0 -332px;}
+#accList .item .marker_9 {background-position: 0 -378px;}
+#accList .item .marker_10 {background-position: 0 -423px;}
+#accList .item .marker_11 {background-position: 0 -470px;}
+#accList .item .marker_12 {background-position: 0 -516px;}
+#accList .item .marker_13 {background-position: 0 -562px;}
+#accList .item .marker_14 {background-position: 0 -608px;}
+#accList .item .marker_15 {background-position: 0 -654px;}

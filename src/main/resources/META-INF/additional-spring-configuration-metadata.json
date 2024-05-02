@@ -1,0 +1,12 @@
+{"properties": [
+  {
+    "name": "kakao.api.key",
+    "type": "java.lang.String",
+    "description": "A description for 'kakao.api.key'"
+  },
+  {
+    "name": "kakao.api.libraries",
+    "type": "java.lang.String",
+    "description": "A description for 'kakao.api.libraries'"
+  }
+]}

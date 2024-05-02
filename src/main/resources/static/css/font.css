@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'ChosunGu';
+  src: url('../fonts/ChosunGu.TTF'); 
+}
+
+@font-face {
+  font-family: 'ChosunKg';
+  src: url('../fonts/ChosunKg.TTF'); 
+}
+
+@font-face {
+  font-family: 'ChosunNm';
+  src: url('../fonts/ChosunNm.TTF'); 
+}
+
+@font-face {
+  font-family: 'ChosunLo';
+  src: url('../fonts/ChosunLo.TTF'); 
+}
+
+@font-face {
+    font-family: 'Anja';
+    src: url('../fonts/AnjaElianeaccent002.TTF'); 
+}
+
+@font-face {
+  font-family: 'PureunJeonnam-Bold';
+  src: url('../fonts/PureunJeonnam-Bold.ttf'); 
+}
+
+@font-face {
+  font-family: 'PureunJeonnam-Medium';
+  src: url('../fonts/PureunJeonnam-Medium.ttf'); 
+}
+
+@font-face {
+  font-family: 'KimjungchulGothic-Bold';
+  src: url('../fonts/KimjungchulGothic-Bold.otf'); 
+}
+
+@font-face {
+  font-family: 'KimjungchulGothic-Light';
+  src: url('../fonts/KimjungchulGothic-Light.otf'); 
+}
+
+@font-face {
+  font-family: 'KimjungchulGothic-Regular';
+  src: url('../fonts/KimjungchulGothic-Regular.otf'); 
+}
+
+@font-face {
+  font-family: 'GmarketSansLight';
+  src: url('../fonts/GmarketSansLight.otf'); 
+}
+
+@font-face {
+  font-family: 'GmarketSansMedium';
+  src: url('../fonts/GmarketSansMedium.otf'); 
+}
+
+@font-face {
+  font-family: 'GmarketSansBold';
+  src: url('../fonts/GmarketSansBold.otf'); 
+}
+
+@font-face {
+  font-family: 'HakgyoansimWoojuR';
+  src: url('../fonts/HakgyoansimWoojuR.otf'); 
+}
+
+@font-face {
+  font-family: 'NEXON Lv2 Gothic';
+  src: url('../fonts/NEXON Lv2 Gothic.woff'); 
+}
+
+@font-face {
+  font-family: 'Dovemayo_gothic';
+  src: url('../fonts/Dovemayo_gothic.ttf'); 
+}
+
+
+
+
+
+.ft-face-gu {
+  font-family: 'PureunB', sans-serif;
+}
+.ft-face-kg {
+  font-family: 'ChosunKg', sans-serif;
+}
+.ft-face-nm {
+  font-family: 'KimjungchulGothic-Regular', sans-serif;
+}
+.ft-face-lo {
+  font-family: 'ChosunLo', sans-serif;
+}
+.ft-face-an {
+  font-family: 'Anja', sans-serif;
+}
+.ft-face-do {
+  font-family: 'Dovemayo_gothic', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Dovemayo_gothic', sans-serif;
+  font-weight: 500;
+  font-size: 1.06rem;
+}
+
+html, body {
+	font-family: 'Dovemayo_gothic', sans-serif;
+}
+
+#nav-container , .nav , .nav-link , .navbar-nav {
+    font-family: 'Dovemayo_gothic', sans-serif;
+    font-weight: 600;
+    opacity: 1;
+    color: #7a7676;
+}
+
+button {
+	font-family: 'KimjungchulGothic-Bold', sans-serif;
+}

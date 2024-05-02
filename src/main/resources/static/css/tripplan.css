@@ -1,0 +1,319 @@
+@charset "UTF-8";
+
+.navbar {
+    box-shadow: 0 1px 10px rgba(0,0,0,0.3);
+    transform: translateY(0);
+    transition: 0.6s;
+    z-index: 999;
+    background-color: white;
+}
+.navbar:hover {
+    transform: translateY(0);
+}
+.arrow-down:hover .navbar {
+    transform: translateY(0);
+}
+#nav-container{
+    transition: 0.6s;
+}
+
+#nav-container:hover .navbar {
+    transform: translateY(0);
+}
+.navbar:hover .arrow-down {
+    opacity: 0 !important;
+    background-image: url();
+    font-size: 0;
+    z-index: -1;
+}
+.arrow-container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 50px;
+}
+.arrow-down {
+    font-style: italic;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    z-index: 10;
+    width: 50px;
+    height: 50px; 
+    background-image: url(../img/fast-backward.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; /* 이미지를 부모 요소에 맞게 조절 */
+    margin: auto;
+    transform:translateY(-50%);
+    transition: 0.5s;
+    animation: bounceUpDown 5s infinite alternate;
+    cursor: pointer;
+}
+@keyframes bounceUpDown {
+    0%, 100% {
+        transform: translateY(-50%); /* 초기 및 최종 위치 */
+        opacity: 0.1;
+    }
+    50% {
+        transform: translateY(30%); /* 중간 위치에서 위로 이동 */
+        opacity: 0.3;
+    }
+}
+.plan-googlemap-container {
+    position: relative;
+    height: 100%;
+}
+.plan-container {             
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: 1;
+}
+.step-lists {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid rgb(153 151 151 / 10%);
+    box-shadow: 1px 0px 5px rgba(0,0,0,0.3);
+    margin-bottom: 0;
+    padding-left: 1rem;
+}
+.step-list {
+    flex: 2;
+}
+.step-lists li {
+    list-style: none;
+}
+.step-lists li a {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    transition-duration: .2s;
+    --tw-text-opacity: 1;
+    color: rbg(80 212 229/var(--tw-text-opacity));
+    line-height: 1.5;
+    font-weight: 600;
+    font-size: .75rem;
+    cursor: pointer;
+    display: block;
+
+}
+.step-lists button {
+    width: 100%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    width: 80px;
+    height: 50px;
+    justify-content: center;
+}
+.btn-container {
+    margin-bottom: 1rem;
+}
+.left-plan-container {
+    width: 350px;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    bottom: 0;
+    padding-top: 60px;
+    padding: 1rem;
+    overflow-wrap: break-word;
+    display: none;
+    box-shadow: 1px 0 5px rgba(0,0,0,0.3);
+    transition: 0.5s;
+}
+.datepicker-wrapper{
+    display: inline-block;
+    padding: 0;
+    border: 0;
+    width: auto;
+}
+.datepicker__input-container {
+    position: relative;
+    display: inline-block;
+}
+.trvl_day {
+    border: 1px solid rgba(0,0,0,0.1) !important;
+}
+#trvl_time {
+    color:rgb(30, 30, 245);
+}
+#trvl_time_help {
+    font-size: 0.75rem;
+    word-wrap: break-word; 
+    color: rgba(0,0,0,0.75);
+}
+#trvl_tableColumes {
+    width: 100%;
+    text-align: center;
+}
+#trvl_tableColumes thead {
+    opacity: 0.7;
+    background-color: rgba(0,0,0,0.1) !important;
+
+}
+#trvl_tablearea td {
+    padding: 3px;
+    font-weight: 600;
+}
+
+#plan-lists {
+    overflow: auto;
+    margin: 10px 0;
+    width: 100%;
+    height: calc(100% - 40px);
+}
+#region select{
+    width: 45%;
+    height: 38px;
+    border-radius: 5px;
+}
+.form-text {
+    width: 100px;
+    height: 38px;
+}
+.circle {
+    background-image: url(../img/add.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 12px;
+    height: 12px;
+    display: block;
+}
+.table td {
+  text-align: center;
+  font-size: 20px;
+}
+#invite input , #preparation input {
+    left: 32px;
+}
+
+#invite span , #preparation span {
+    margin-left: 30px;
+}
+#link5 .none {
+    display: none !important;
+}
+.spotListone input {
+    /* right: 20px;
+    top: 43%;
+    transform: translateY(-50%); */
+}
+.spotListone img {
+    width: 50px;
+    display: block;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.spot-container.active {
+    display: block !important;
+}
+.spot-container {
+    display: none !important;
+    transition: 0.7s;
+}
+#tab-spot {
+    position: absolute;
+    left: 0px;
+    top: 40px;
+    width: 340px;
+}
+#nav-tab .dayTab {
+    color: black;
+    padding: 12px;
+    border-radius: 0px;
+    border: 1px solid rgba(0,0,0,0.3) !important;
+    margin-bottom: 10px;
+    border-left: none;
+    opacity: 0.6;
+    background-color: rgb(229, 229, 229);
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+#nav-tab .dayTab.active {
+    background-color: white;
+    opacity: 1;
+}
+/**************************캘린더*************************/ 
+#CalendarTableara {
+	display: none;
+}
+#tablearea , #nextTableArea {
+    position: relative;
+    width: 100%;
+}
+#tablearea caption , #nextTableArea caption {
+    text-align: center;
+    display: block;
+    top: -36px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    letter-spacing: 5px;
+    color: #000;
+    font-weight: 600;
+}
+#tablearea td, #tablearea th {
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+    border: none;
+    font-weight: 400;
+    width: 40px;
+    line-height: 2rem;
+    font-size: 0.9rem;
+    opacity: 1;
+}
+#nextTableArea td, #nextTableArea th {
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+    border: none;
+    font-weight: 400;
+    width: 40px;
+    line-height: 2rem;
+    font-size: 0.9rem;
+    opacity: 1;
+}
+#tablearea th , #nextTableArea th {
+    font-weight: 600;
+}
+#tablearea th:first-child ,#nextTableArea th:first-child {
+    color: #e53e30;
+}
+#tablearea th:last-child ,#nextTableArea th:last-child {
+    color: #006f80;
+}
+#tablearea td , #nextTableArea td{
+    cursor: pointer;
+}
+#tablearea td:first-child , #nextTableArea td:first-child {
+    color: #e53e30;
+}
+#tablearea td:last-child , #nextTableArea td:last-child {
+    color: #006f80;
+}
+.past-day {
+    color: #ccc !important;
+    pointer-events: none !important; /* 클릭 이벤트 비활성화 */
+}
+
+.tablearea td.selected-day {
+    background-color: #2f0086 !important; /* 클릭한 날짜의 배경색 */
+    color: #fff !important; /* 클릭한 날짜의 글자색 */
+}
+
+/* hover 효과 스타일 */
+.tablearea td.hover-day {
+    background-color: #4ac3ff !important; /* hover한 날짜의 배경색 */
+}
+
+/* 선택한 날짜 사이의 날짜에 대한 스타일 */
+.tablearea td.range-day {
+    background-color: #4ac3ff !important; /* 선택한 날짜 사이의 배경색 */
+}
